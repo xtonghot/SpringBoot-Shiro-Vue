@@ -1,5 +1,6 @@
 package com.heeexy.example;
 
+import com.spring4all.swagger.EnableSwagger2Doc;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
@@ -12,6 +13,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
  * @description: SpringBoot启动类
  * @date: 2017/10/24 11:55
  */
+@EnableSwagger2Doc
 @SpringBootApplication
 @MapperScan("com.heeexy.example.dao")
 public class MyApplication extends SpringBootServletInitializer {
@@ -28,3 +30,4 @@ public class MyApplication extends SpringBootServletInitializer {
 		return builder.sources(MyApplication.class);
 	}
 }
+
